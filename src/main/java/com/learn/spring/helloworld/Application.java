@@ -16,6 +16,7 @@ public class Application {
 		   Spring container manages spring beans and their life cycle.
 		   Inside JVM you have a spring context which manages all spring beans. Spring
 		   container is also called Spring IoC container or Spring/Application Context.
+
 		   There are 2 types of containers. Bean factory and Application context. Bean
 		   Factory has limited functionalities. Application Context is used widely (web
 		   applications, easy integration with AOP). Bean factory is used where we are
