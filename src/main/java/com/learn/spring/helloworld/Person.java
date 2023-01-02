@@ -48,7 +48,11 @@ public class Person {
     }
 
     // In this case the fullName parameter is autowired. There is a bean already named fullName which
-    // spring uses in the below function parameter
+    // spring uses in the below function parameter. In such cases the parameter is auto wired based on the
+    // same name. If the name differs,
+    // There should be a single bean of that type or
+    // There has to be a @Primary annotation on one the same type beans or
+    // We have to qualify any same type bean and use that in the parameter as shown in addressByInjectingOtherBeansWithQualifier
     @Bean
     public Address addressByInjectingOtherBeans(String fullName) {
         return new Address(fullName, "595 241st LN SE", "", "WA", "98074");
